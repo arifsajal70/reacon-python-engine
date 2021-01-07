@@ -24,4 +24,4 @@ class Currency(Document):
         :param short_code:
         :return:
         """
-        return cls.objects(short_code=short_code)
+        return cls.objects(short_code=short_code).first()
